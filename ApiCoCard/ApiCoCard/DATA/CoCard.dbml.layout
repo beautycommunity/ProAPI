@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.25" name="CoCard">
+  <DataContextMoniker Name="/CoCardDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5ade9fd3-db5b-4d23-9788-fe2795c90202" absoluteBounds="0.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CoCardDataContext/MAS_FORM_CO_CARD_CHOICE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8cf5dd8-7162-4232-8538-e70d23f9440f" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3a2b0851-ffef-497f-9a1b-4a21f24515a6" absoluteBounds="3.75, 0.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/CoCardDataContext/MAS_FORM_CO_CARD_SETTING" />
+      <nestedChildShapes>
+        <elementListCompartment Id="06581ded-6be5-4812-9b20-cd96f9efaaae" absoluteBounds="3.765, 1.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c8052b23-53c5-431c-a05e-905c67ff93cd" absoluteBounds="0.75, 4.75, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/CoCardDataContext/TRN_FORM_CO_CARD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b35486f-9f1f-468e-8b9c-206dbf9dc556" absoluteBounds="0.765, 5.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

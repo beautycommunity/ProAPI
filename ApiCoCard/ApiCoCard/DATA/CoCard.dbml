@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbWebForm" Class="CoCardDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=dbWebForm;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="dbWebFormConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MAS_FORM_CO_CARD_CHOICE" Member="MAS_FORM_CO_CARD_CHOICEs">
+    <Type Name="MAS_FORM_CO_CARD_CHOICE">
+      <Column Name="CHOICE_ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CAMPAIGN__ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CHOICE_NO" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CHOICE_CAPTION" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CFLAG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MAS_FORM_CO_CARD_SETTING" Member="MAS_FORM_CO_CARD_SETTINGs">
+    <Type Name="MAS_FORM_CO_CARD_SETTING">
+      <Column Name="CAMPAIGN_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BRAND_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CAMPAIGN_NAME" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FORM_CAPTION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CFLAG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GRPDETAIL" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GRPFGF" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GRPDISCOUNT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TRN_FORM_CO_CARD" Member="TRN_FORM_CO_CARDs">
+    <Type Name="TRN_FORM_CO_CARD">
+      <Column Name="ROWNO" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CAMPAIGN_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="WORKDATE" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ABBNO" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ADDR_FULLNAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ADDR_MOBILE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WHCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WHNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STCODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STNAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FLAG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DISCOUNT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SYSCRATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FGF" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FGF_CARDID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FGF_ABBNO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FGF_SALEDATE" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="FGF_CARDID_FRIEND" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
